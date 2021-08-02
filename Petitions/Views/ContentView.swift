@@ -15,7 +15,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List(petitions) { petition in
-                NavigationLink(destination: Text("Detail")) {
+                NavigationLink(destination: DetailView(petition: petition)) {
                     HStack {
                         ProgressView(value: petition.progress, total: 1.0)
                             .progressViewStyle(GaugeProgressStyle())

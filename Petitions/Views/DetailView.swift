@@ -8,13 +8,30 @@
 import SwiftUI
 
 struct DetailView: View {
+    
+    var petition: Petition
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            Text(petition.title)
+                .font(.title)
+                .padding(.horizontal, 15)
+            ProgressView(value: petition.progress, total: 1.0)
+                .padding(.horizontal, 15)
+            HStack {
+                Text("\(petition.signatureCount) / \(petition.signatureThreshold)")
+                Spacer()
+            }
+            .padding(.horizontal)
+            Text(petition.body)
+                .padding()
+        }
+        .navigationTitle(petition.id)
     }
 }
 
-struct DetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        DetailView()
-    }
-}
+//struct DetailView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        DetailView()
+//    }
+//}
