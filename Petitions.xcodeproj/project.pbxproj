@@ -11,6 +11,10 @@
 		81A5714326B84A5E00AA4C40 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A5714226B84A5E00AA4C40 /* ContentView.swift */; };
 		81A5714526B84A6000AA4C40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81A5714426B84A6000AA4C40 /* Assets.xcassets */; };
 		81A5714826B84A6000AA4C40 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81A5714726B84A6000AA4C40 /* Preview Assets.xcassets */; };
+		81A5714F26B84ADE00AA4C40 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A5714E26B84ADE00AA4C40 /* Helpers.swift */; };
+		81A5715326B84ECB00AA4C40 /* Petition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A5715226B84ECB00AA4C40 /* Petition.swift */; };
+		81A5715726B854E700AA4C40 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A5715626B854E700AA4C40 /* DetailView.swift */; };
+		81A5715A26B85D5C00AA4C40 /* GaugeProgressStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A5715926B85D5C00AA4C40 /* GaugeProgressStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		81A5714226B84A5E00AA4C40 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		81A5714426B84A6000AA4C40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81A5714726B84A6000AA4C40 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		81A5714E26B84ADE00AA4C40 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		81A5715226B84ECB00AA4C40 /* Petition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Petition.swift; sourceTree = "<group>"; };
+		81A5715626B854E700AA4C40 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		81A5715926B85D5C00AA4C40 /* GaugeProgressStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeProgressStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,9 @@
 			isa = PBXGroup;
 			children = (
 				81A5714026B84A5E00AA4C40 /* PetitionsApp.swift */,
-				81A5714226B84A5E00AA4C40 /* ContentView.swift */,
+				81A5715026B84B0D00AA4C40 /* Extensions */,
+				81A5715126B84EBD00AA4C40 /* Model */,
+				81A5715826B8550B00AA4C40 /* Views */,
 				81A5714426B84A6000AA4C40 /* Assets.xcassets */,
 				81A5714626B84A6000AA4C40 /* Preview Content */,
 			);
@@ -65,6 +75,32 @@
 				81A5714726B84A6000AA4C40 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		81A5715026B84B0D00AA4C40 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				81A5714E26B84ADE00AA4C40 /* Helpers.swift */,
+				81A5715926B85D5C00AA4C40 /* GaugeProgressStyle.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		81A5715126B84EBD00AA4C40 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				81A5715226B84ECB00AA4C40 /* Petition.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		81A5715826B8550B00AA4C40 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				81A5715626B854E700AA4C40 /* DetailView.swift */,
+				81A5714226B84A5E00AA4C40 /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81A5715A26B85D5C00AA4C40 /* GaugeProgressStyle.swift in Sources */,
 				81A5714326B84A5E00AA4C40 /* ContentView.swift in Sources */,
+				81A5715326B84ECB00AA4C40 /* Petition.swift in Sources */,
+				81A5714F26B84ADE00AA4C40 /* Helpers.swift in Sources */,
+				81A5715726B854E700AA4C40 /* DetailView.swift in Sources */,
 				81A5714126B84A5E00AA4C40 /* PetitionsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
